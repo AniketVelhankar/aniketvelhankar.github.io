@@ -3,8 +3,11 @@
    ========================================================================== */
 
 .masthead {
-  position: relative;
+  position: sticky;
+  top: 0;
   border-bottom: 1px solid $border-color;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
   -webkit-animation-delay: 0.15s;
@@ -27,6 +30,12 @@
 
     a {
       text-decoration: none;
+      color: $text-color;
+      transition: color 0.3s ease;
+      
+      &:hover {
+        color: $primary-color;
+      }
     }
   }
 }
@@ -49,5 +58,18 @@
   &--lg {
     padding-right: 2em;
     font-weight: 700;
+    color: $primary-color;
+  }
+  
+  a {
+    display: block;
+    padding: 0.5em 1em;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      border-bottom-color: $primary-color;
+      color: $primary-color;
+    }
   }
 }

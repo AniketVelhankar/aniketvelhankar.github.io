@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Aniket Velhankar"
 title_separator          : "-"
 name                     : &name "Aniket Velhankar"
-description              : &description "personal description"
+description              : &description "Deep Learning & Computer Vision Researcher | Building AI solutions for real-world problems"
 url                      : https://aniketvelhankar.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "aniketvelhankar/aniketvelhankar.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Aniket Velhankar"
   avatar           : "profile.png"
-  bio              : "CS Undergrad Student | Deep Learning researcher"
+  bio              : "Deep Learning & Computer Vision Researcher | Building AI Solutions"
   location         : "Pune, India"
   employer         :
   pubmed           : 
@@ -99,10 +99,10 @@ author:
   github           : "aniketvelhankar"
   google_plus      :
   keybase          :
-  instagram        :
+  instagram        : "imAniketV"
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "aniketvelhankar"
+  linkedin         : "aniket-velhankar"
   orcid            : 
   pinterest        :
   soundcloud       :
