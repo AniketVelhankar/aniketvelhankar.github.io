@@ -1,150 +1,151 @@
 ---
 layout: archive
-title: "100 List"
+title: "My 100 Goals"
 permalink: /list-100/
 author_profile: true
 ---
 
-<style>
-.list-100-container {
-  max-width: 900px;
-}
+## My 100 Goals
 
-.list-intro {
-  margin-bottom: 3em;
-  padding-bottom: 2em;
-  border-bottom: 1px solid #e0e0e0;
-}
+A collection of 100 goals and aspirations I'm working towards. Updated periodically.
 
-.list-intro p {
-  font-size: 1.05em;
-  line-height: 1.7;
-  color: #333;
-  margin-bottom: 1em;
-}
-
-.list-category {
-  margin: 2.5em 0;
-}
-
-.list-category h3 {
-  font-size: 1.3em;
-  margin-bottom: 1.5em;
-  color: #222;
-  font-weight: 600;
-  padding-bottom: 0.5em;
-  border-bottom: 2px solid #0066cc;
-}
-
-.list-items {
-  display: grid;
-  gap: 1.5em;
-}
-
-.list-item {
-  padding: 1.2em;
-  background: #f9f9f9;
-  border-left: 3px solid #0066cc;
-  transition: all 0.3s ease;
-  border-radius: 4px;
-}
-
-.list-item:hover {
-  background: #f0f5ff;
-  transform: translateX(5px);
-  box-shadow: 0 2px 8px rgba(0, 102, 204, 0.1);
-}
-
-.list-item-number {
-  display: inline-block;
-  background: #0066cc;
-  color: white;
-  width: 2.5em;
-  height: 2.5em;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  margin-right: 1em;
-  margin-bottom: 0.8em;
-}
-
-.list-item-title {
-  font-size: 1.1em;
-  font-weight: 600;
-  color: #222;
-  margin-bottom: 0.5em;
-}
-
-.list-item-description {
-  font-size: 0.95em;
-  color: #555;
-  line-height: 1.6;
-  margin-bottom: 0.8em;
-}
-
-.list-item-link {
-  display: inline-block;
-  color: #0066cc;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.list-item-link:hover {
-  color: #0052a3;
-  text-decoration: underline;
-}
-
-.list-stats {
-  background: #f0f5ff;
-  padding: 1.5em;
-  border-radius: 8px;
-  margin: 2em 0;
-}
-
-.list-stats h4 {
-  margin-top: 0;
-  color: #0066cc;
-}
-
-.list-complete-message {
-  text-align: center;
-  padding: 2em;
-  background: #e8f5e9;
-  border-radius: 8px;
-  color: #2e7d32;
-  margin: 2em 0;
-}
-</style>
-
-## My 100 List
-
-This page is inspired by [Chip Huyen's 100 List](https://huyenchip.com/list-100/) — a collection of 100 things I want to accomplish, learn, experience, and create.
-
-I believe in being intentional about growth. This list helps me:
-- **Stay focused** on what truly matters
-- **Track progress** towards meaningful goals
-- **Inspire action** and continuous learning
-- **Reflect** on my journey and achievements
+**Completion: 12/100 (12%)**
 
 ---
 
 ### Career & Professional Growth
 
-<div class="list-items">
-  <div class="list-item">
-    <span class="list-item-number">1</span>
-    <div class="list-item-title">Publish peer-reviewed research paper in top-tier ML conference</div>
-    <div class="list-item-description">Contribute original research in deep learning or computer vision to CVPR, ICCV, or similar venue.</div>
-  </div>
+- [x] Complete deep learning specialization
+- [x] Publish my first technical blog
+- [ ] Contribute to open-source deep learning projects
+- [ ] Give a talk at a tech conference
+- [ ] Work on a production-scale ML system
+- [ ] Develop expertise in MLOps and deployment
+- [ ] Build a machine learning product
+- [ ] Lead a team of engineers
+- [ ] Mentor junior developers
+- [ ] Write a technical paper
 
-  <div class="list-item">
-    <span class="list-item-number">2</span>
-    <div class="list-item-title">Work as ML/AI engineer at leading tech company</div>
-    <div class="list-item-description">Gain industry experience building production ML systems at scale.</div>
-  </div>
+### Learning & Education
+
+- [x] Master Python for ML/AI
+- [x] Learn TensorFlow and PyTorch
+- [ ] Study formal computer science algorithms
+- [ ] Learn cloud infrastructure (AWS/GCP)
+- [ ] Complete Kaggle competitions
+- [ ] Understand transformer architectures deeply
+- [ ] Study reinforcement learning
+- [ ] Learn C++ for systems programming
+- [ ] Master Docker and Kubernetes
+- [ ] Understand distributed systems
+
+### Projects & Creation
+
+- [ ] Build 10 production-ready projects
+- [ ] Create a widely-used open-source library
+- [ ] Develop a SaaS product
+- [ ] Build a personal brand and audience
+- [ ] Create comprehensive tutorials/courses
+- [ ] Publish research findings
+- [ ] Contribute to major open-source projects
+- [ ] Build an AI-powered application
+- [ ] Create interactive data visualization tools
+- [ ] Develop a mobile application
+
+### Reading & Knowledge
+
+- [ ] Read 50 technical books
+- [ ] Read 100 research papers
+- [ ] Explore 10 different programming languages
+- [ ] Study mathematics (linear algebra, calculus)
+- [ ] Learn about cryptography and security
+- [ ] Understand blockchain technology
+- [ ] Study quantum computing basics
+- [ ] Read about AI ethics and safety
+- [ ] Explore philosophy and logic
+- [ ] Learn history of computer science
+
+### Personal Development
+
+- [x] Maintain consistent exercise routine
+- [ ] Learn a new language (Spanish/Mandarin)
+- [ ] Travel to 20 countries
+- [ ] Read 100 books (non-technical)
+- [ ] Keep a daily journal
+- [ ] Meditate regularly
+- [ ] Improve public speaking skills
+- [ ] Develop better writing habits
+- [ ] Learn photography
+- [ ] Practice financial literacy
+
+### Networking & Community
+
+- [ ] Attend 10 tech conferences
+- [ ] Build a network of 200+ professionals
+- [ ] Contribute to 5 different open-source projects
+- [ ] Make meaningful connections with 10 mentors
+- [ ] Join tech communities and forums
+- [ ] Organize a local meetup or workshop
+- [ ] Collaborate on research with peers
+- [ ] Build friendships with fellow learners
+- [ ] Help others learn programming
+- [ ] Create a mentorship program
+
+### Fitness & Health
+
+- [x] Run a 5K
+- [ ] Run a half-marathon
+- [ ] Run a full marathon
+- [ ] Achieve 10 pull-ups consecutively
+- [ ] Master handstand
+- [ ] Reduce body fat to 12%
+- [ ] Build consistent sleep schedule
+- [ ] Eliminate sugar from diet
+- [ ] Do 1000 push-ups in a month
+- [ ] Complete yoga certification
+
+### Travel & Experiences
+
+- [ ] Visit Silicon Valley
+- [ ] Attend tech conference in another country
+- [ ] Solo trip to Europe
+- [ ] Explore Southeast Asia
+- [ ] Live in 3 different cities
+- [ ] Experience startup ecosystem in another country
+- [ ] Attend a hackathon in major tech hub
+- [ ] Visit leading tech companies
+- [ ] Experience different cultures (food, traditions)
+- [ ] Road trip across a country
+
+### Financial Goals
+
+- [ ] Earn 6-figure income
+- [ ] Build 1-year emergency fund
+- [ ] Invest in stocks and crypto
+- [ ] Buy own apartment/house
+- [ ] Achieve financial independence
+- [ ] Invest in 5 startups
+- [ ] Create passive income streams
+- [ ] Reach net worth of 1 million
+- [ ] Build a diversified portfolio
+- [ ] Donate to meaningful causes
+
+### Personal Projects
+
+- [ ] Build personal website with 10+ projects
+- [ ] Create YouTube channel with 10+ videos
+- [ ] Write a blog with 50+ articles
+- [ ] Develop 3 profitable projects
+- [ ] Create online course
+- [ ] Build API that processes 1 million requests/day
+- [ ] Achieve 1000 stars on GitHub
+- [ ] Create a viral project
+- [ ] Launch a successful side business
+- [ ] Build a product people love
+
+---
+
+[Home](/) • [Summary](/summary/) • [Papers](/papers/)
 
   <div class="list-item">
     <span class="list-item-number">3</span>

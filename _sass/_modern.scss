@@ -1,51 +1,43 @@
-/* Modern Website Styling Enhancements */
-
-/* Typography improvements */
-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-}
+/* Minimal styling enhancements */
 
 /* Link styling */
 a {
   color: #0066cc;
   text-decoration: none;
-  transition: all 0.3s ease;
   
   &:hover {
     color: #0052a3;
+    text-decoration: underline;
   }
   
   &:visited {
-    color: #6a5acd;
+    color: #666;
   }
 }
 
-/* Better heading styles */
+/* Cleaner heading styles */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
-  letter-spacing: -0.5px;
   color: #1a1a1a;
 }
 
 h1 {
-  font-size: 2.2em;
+  font-size: 2em;
   margin-bottom: 0.8em;
 }
 
 h2 {
-  font-size: 1.8em;
+  font-size: 1.6em;
   margin-top: 1.5em;
   margin-bottom: 0.6em;
 }
 
 h3 {
-  font-size: 1.4em;
+  font-size: 1.2em;
   margin-top: 1.2em;
 }
 
-/* Better list styling */
+/* Simple list styling */
 ul, ol {
   margin-left: 1.5em;
 }
@@ -55,14 +47,12 @@ li {
   line-height: 1.7;
 }
 
-/* Modern blockquote */
+/* Simple blockquote */
 blockquote {
-  background: #f0f5ff;
+  background: #f9f9f9;
   border-left: 4px solid #0066cc;
-  margin: 2em 0;
-  padding: 1.25em;
-  border-radius: 4px;
-  font-style: italic;
+  margin: 1.5em 0;
+  padding: 1em;
   color: #444;
 }
 
@@ -70,12 +60,8 @@ blockquote {
 table {
   width: 100%;
   border-collapse: collapse;
-  margin: 2em 0;
+  margin: 1.5em 0;
   font-size: 0.95em;
-}
-
-thead {
-  background: #f0f5ff;
 }
 
 th, td {
@@ -87,11 +73,7 @@ th, td {
 th {
   font-weight: 600;
   color: #0066cc;
-  background-color: #f0f5ff;
-}
-
-tbody tr:hover {
-  background-color: #fafbfc;
+  background-color: #f9f9f9;
 }
 
 /* Image styling */
@@ -99,20 +81,13 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
-  border-radius: 6px;
   margin: 1.5em 0;
-}
-
-img[alt*="profile"],
-img[alt*="avatar"] {
-  border-radius: 50%;
 }
 
 /* Code improvements */
 .highlight {
-  background: #f8f9fa;
-  border-radius: 6px;
-  padding: 1.25em;
+  background: #f9f9f9;
+  padding: 1em;
   overflow-x: auto;
   border-left: 4px solid #0066cc;
   margin: 1.5em 0;
@@ -123,7 +98,7 @@ code {
   font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
 }
 
-/* Button styling */
+/* Simple button styling */
 .btn, button, input[type="submit"] {
   display: inline-block;
   padding: 0.7em 1.5em;
@@ -133,79 +108,25 @@ code {
   border-radius: 4px;
   font-weight: 500;
   cursor: pointer;
-  transition: all 0.3s ease;
   text-decoration: none;
   
   &:hover {
     background-color: #0052a3;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 102, 204, 0.2);
-  }
-  
-  &:active {
-    transform: translateY(0);
-  }
-}
-
-/* Container improvements */
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 1.5em;
-}
-
-/* Archive and list item styling */
-.archive__item {
-  transition: all 0.3s ease;
-  
-  &:hover {
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
-}
-
-.archive__item-title {
-  color: #0066cc;
-  font-weight: 600;
-}
-
-/* Cards and boxes */
-.box, .card {
-  background: #f9f9f9;
-  border: 1px solid #e0e0e0;
-  border-radius: 6px;
-  padding: 1.5em;
-  margin: 1.5em 0;
-  transition: all 0.3s ease;
-  
-  &:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    border-color: #0066cc;
   }
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
   h1 {
-    font-size: 1.8em;
+    font-size: 1.6em;
   }
   
   h2 {
-    font-size: 1.4em;
+    font-size: 1.3em;
   }
   
   h3 {
-    font-size: 1.1em;
+    font-size: 1.05em;
   }
 }
 
-/* Print styles */
-@media print {
-  a {
-    text-decoration: underline;
-  }
-  
-  pre, code {
-    background: #f0f0f0;
-    border: 1px solid #ddd;
-  }
-}
