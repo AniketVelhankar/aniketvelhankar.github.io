@@ -9,30 +9,26 @@
   margin-right: 0;
   width: 100%;
   clear: both;
-  /* sticky footer fix removed for normal flow */
   position: relative;
   bottom: auto;
   height: auto;
   margin-top: 3em;
-  color: #666;
-
-  padding: 0.8rem 0;
+  color: var(--site-foreground);
+  padding: 2rem 0;
   background: var(--card-background);
-  box-shadow: inset 0 1px 0 rgba(0,0,0,0.04);
+  border-top: 1px solid var(--site-border);
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
   -webkit-animation-delay: 0.45s;
           animation-delay: 0.45s;
-  background: linear-gradient(to bottom, #f8f9fa, #ffffff);
-  border-top: 1px solid $border-color;
 
   footer {
     @include clearfix;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2em;
+    margin-top: 1em;
     max-width: 100%;
-    padding: 2em;
+    padding: 1em 2em;
     overflow: visible;
 
     @include breakpoint($x-large) {
@@ -41,12 +37,12 @@
   }
 
   a {
-    color: $primary-color;
+    color: var(--site-link);
     text-decoration: none;
     transition: all 0.3s ease;
 
     &:hover {
-      color: #0052a3;
+      color: var(--site-link-hover);
       text-decoration: underline;
     }
   }
@@ -55,7 +51,7 @@
   .fab,
   .far,
   .fal {
-    color: $primary-color;
+    color: var(--site-link);
     transition: color 0.3s ease;
   }
   
@@ -63,14 +59,15 @@
   a:hover .fab,
   a:hover .far,
   a:hover .fal {
-    color: #0052a3;
+    color: var(--site-link-hover);
   }
 }
 
 .page__footer-copyright {
   font-family: $global-font-family;
   font-size: $type-size-7;
-  color: #999;
+  color: var(--site-foreground);
+  opacity: 0.7;
 }
 
 .page__footer-follow {
