@@ -28,13 +28,12 @@
     cursor: pointer;
     margin-left: auto;
     transition: all 0.2s ease;
-  }
 
-  #dark-mode-toggle:hover {
-    transform: translateY(-1px);
-    background: rgba(255,255,255,0.92);
+    &:hover {
+      transform: translateY(-1px);
+      background: rgba(255,255,255,0.92);
+    }
   }
-}
 
   &__inner-wrap {
     @include container;
@@ -98,22 +97,5 @@
       color: var(--site-link);
       text-decoration: none;
     }
-  }
-}
-
-#dark-mode-toggle {
-  border: none;
-  background: transparent;
-  color: var(--site-foreground);
-  font-size: 1.1rem;
-  cursor: pointer;
-  padding: 0.3em 0.7em;
-  border-radius: 8px;
-  transition: transform 0.2s ease, background-color 0.2s ease;
-  margin-left: 0.5rem;
-
-  &:hover {
-    transform: translateY(-1px);
-    background-color: rgba(0, 0, 0, 0.08);
   }
 }
