@@ -5,9 +5,10 @@
 .masthead {
   position: sticky;
   top: 0;
-  border-bottom: 1px solid $border-color;
-  background: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid var(--site-border);
+  background: var(--masthead-background);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(8px);
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
   -webkit-animation-delay: 0.15s;
@@ -30,11 +31,11 @@
 
     a {
       text-decoration: none;
-      color: $text-color;
+      color: var(--site-foreground);
       transition: color 0.3s ease;
       
       &:hover {
-        color: $primary-color;
+        color: var(--site-link);
       }
     }
   }
@@ -58,7 +59,7 @@
   &--lg {
     padding-right: 2em;
     font-weight: 700;
-    color: $primary-color;
+    color: var(--site-link);
   }
   
   a {
@@ -66,10 +67,28 @@
     padding: 0.5em 1em;
     border-bottom: 2px solid transparent;
     transition: all 0.3s ease;
+    color: var(--site-foreground);
     
     &:hover {
-      border-bottom-color: $primary-color;
-      color: $primary-color;
+      border-bottom-color: var(--site-link);
+      color: var(--site-link);
     }
+  }
+}
+
+#dark-mode-toggle {
+  border: none;
+  background: transparent;
+  color: var(--site-foreground);
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 0.3em 0.7em;
+  border-radius: 8px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  margin-left: 0.5rem;
+
+  &:hover {
+    transform: translateY(-1px);
+    background-color: rgba(0, 0, 0, 0.08);
   }
 }

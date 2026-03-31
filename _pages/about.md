@@ -3,61 +3,41 @@ permalink: /
 title: ""
 excerpt: "Aniket Velhankar - Deep Learning & Computer Vision Researcher"
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
 
-## Hey, I am Aniket
+## Hi, I’m Aniket
 
-### curious, tinkerer, and explorer
+I build practical, production-ready ML systems with a focus on deep learning and computer vision. I publish research notes, tutorials, and project insights to help other engineers ship better models.
 
-I'm a deep learning and computer vision researcher passionate about building intelligent systems that solve real-world problems. Currently a final-year undergraduate student at [P.I.C.T, Pune](https://pict.edu).
+- Deep learning, vision, and applied AI 
+- Technical blog right here
+- Minimal, modern, performance-first design
 
-My focus is on **bridging research and application** — turning cutting-edge ideas into practical solutions. Interested in neural networks, computer vision, and applied machine learning.
-
-[GitHub](https://github.com/aniketvelhankar) • [Twitter](https://twitter.com/imAniketV) • [LinkedIn](https://www.linkedin.com/in/aniket-velhankar/) • [Email](mailto:aniket.velhankar@gmail.com)
-
----
-
-## Recent Blog Posts • [Full archive ➔](/year-archive/)
-
-Things I have written recently.
-
-- [Coming soon]()
-- [Check back for articles]()
-- [Deep learning insights]()
-- [Computer vision projects]()
-- [Applied research]()
+[GitHub](https://github.com/aniketvelhankar) • [LinkedIn](https://www.linkedin.com/in/aniket-velhankar/) • [Email](mailto:aniket.velhankar@gmail.com)
 
 ---
 
-## Papers I'm Reading • [Full list ➔](/papers/)
+## Latest Blog
 
-Research papers and learning materials I'm studying.
+- [From Research to Production: Deploying a Custom Object Detector](/year-archive/2024-01-01-example-1)  
+- [Efficient Model Architectures for Mobile Inference](/year-archive/2024-02-01-example-2)
 
-- [Vision Transformer (ViT) Advancements](https://arxiv.org/)
-- [Efficient Neural Networks for Mobile](https://arxiv.org/)
-- [Deep Residual Learning for Image Recognition](https://arxiv.org/abs/1512.03385)
-- [You Only Look Once: Unified Object Detection](https://arxiv.org/abs/1506.02640)
-- [Very Deep Convolutional Networks (VGG)](https://arxiv.org/abs/1411.1784)
+[Explore all blog posts ➔](/year-archive/)
 
 ---
 
-## My 100 Goals • [Full list ➔](/list-100/)
+## Latest Papers
 
-100 things I want to accomplish and learn.
+- [Scaling Vision Transformers to 4B Parameters](https://arxiv.org/abs/xxxx.xxxxx)  
+- [Practical Real-Time Multi-Object Tracking](https://arxiv.org/abs/yyyy.yyyyy)
 
-- [ ] Publish peer-reviewed research paper
-- [ ] Work at leading tech company
-- [ ] Build open-source ML library
-- [ ] Master TensorFlow and PyTorch
-- [ ] Complete advanced ML systems design
-- [And 95 more...](/list-100/)
+[Explore full papers list ➔](/papers/)
 
 ---
 
-## More
+*Essential content only. Designed for focused reading and fast publication updates.*
 
-[Summary](/summary/) • [Portfolio](/portfolio/) • [CV](/cv/)
 

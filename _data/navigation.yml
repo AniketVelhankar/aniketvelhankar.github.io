@@ -2,21 +2,12 @@
 main:
   - title: "Home"
     url: /
-    
-  - title: "Summary"
-    url: /summary/
-    
-  - title: "Papers"
-    url: /papers/
-    
-  - title: "List 100"
-    url: /list-100/
-    
-  - title: "Portfolio"
-    url: /portfolio/
-        
+
   - title: "Blog"
     url: /year-archive/
-    
-  - title: "CV"
-    url: /cv/
+
+  - title: "Papers"
+    url: /papers/
+
+  - title: "List 100"
+    url: /list-100/
