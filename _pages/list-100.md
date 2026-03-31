@@ -5,6 +5,12 @@ permalink: /list-100/
 author_profile: true
 ---
 
+<style>
+.page__content {
+  line-height: 2;
+}
+</style>
+
 ## My 100 Goals
 
 A collection of 100 goals and aspirations I'm working towards. Updated periodically.
@@ -142,6 +148,10 @@ A collection of 100 goals and aspirations I'm working towards. Updated periodica
 - [ ] Create a viral project
 - [ ] Launch a successful side business
 - [ ] Build a product people love
+
+---
+
+[Home](/) • [Blog](/year-archive/) • [Papers](/papers/)
 
 ---
 
