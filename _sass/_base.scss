@@ -1,20 +1,53 @@
 /* ==========================================================================
    BASE ELEMENTS
    ========================================================================== */
+
+:root {
+  --site-background: #ffffff;
+  --site-foreground: #1a1a1a;
+  --site-border: #e0e0e0;
+  --site-link: #0066cc;
+  --site-link-hover: mix(#000, #0066cc, 25%);
+  --masthead-background: rgba(255,255,255,0.95);
+  --card-background: #ffffff;
+  --shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+html.dark-mode {
+  --site-background: #080a0f;
+  --site-foreground: #e8ecf6;
+  --site-border: #2f3645;
+  --site-link: #78a8ff;
+  --site-link-hover: #d0e4ff;
+  --masthead-background: rgba(16, 20, 30, 0.92);
+  --card-background: #121827;
+  --shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+html.light-mode {
+  --site-background: #ffffff;
+  --site-foreground: #1a1a1a;
+  --site-border: #e0e0e0;
+  --site-link: #0066cc;
+  --site-link-hover: mix(#000, #0066cc, 25%);
+  --masthead-background: rgba(255,255,255,0.95);
+  --card-background: #ffffff;
+  --shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
 html {
-  /* sticky footer fix */
-  position: relative;
-  min-height: 100%;
+  background: var(--site-background);
+  color: var(--site-foreground);
 }
 
 body {
   margin: 0;
   padding: 0;
   padding-bottom: 9em;
-  color: $text-color;
+  color: var(--site-foreground);
   font-family: $global-font-family;
   line-height: 1.6;
-  background: #ffffff;
+  background: var(--site-background);
 
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
@@ -118,12 +151,16 @@ blockquote {
 /* links */
 
 a {
+  color: var(--site-link);
+  text-decoration: none;
+
   &:focus {
     @extend %tab-focus;
   }
 
   &:hover,
   &:active {
+    color: var(--site-link-hover);
     outline: 0;
   }
 }

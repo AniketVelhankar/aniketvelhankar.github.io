@@ -16,8 +16,37 @@
             <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
           {% endfor %}
         </ul>
+        <button id="dark-mode-toggle" aria-live="polite" aria-label="Toggle dark mode">🌙</button>
         <ul class="hidden-links hidden"></ul>
       </nav>
     </div>
   </div>
 </div>
+
+<script>
+(function () {
+  var storageKey = 'site-theme';
+  var classNameDark = 'dark-mode';
+  var classNameLight = 'light-mode';
+  function setTheme(theme) {
+    document.documentElement.classList.remove(classNameDark, classNameLight);
+    document.documentElement.classList.add(theme);
+    localStorage.setItem(storageKey, theme);
+    var btn = document.getElementById('dark-mode-toggle');
+    if (btn) btn.textContent = theme === classNameDark ? '☀️' : '🌙';
+  }
+  function getPreferredTheme() {
+    var stored = localStorage.getItem(storageKey);
+    if (stored === classNameDark || stored === classNameLight) return stored;
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? classNameDark : classNameLight;
+  }
+  setTheme(getPreferredTheme());
+  var toggle = document.getElementById('dark-mode-toggle');
+  if (toggle) {
+    toggle.addEventListener('click', function() {
+      var next = document.documentElement.classList.contains(classNameDark) ? classNameLight : classNameDark;
+      setTheme(next);
+    });
+  }
+})();
+</script>
