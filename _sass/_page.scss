@@ -5,16 +5,27 @@
 #main {
   @include container;
   @include clearfix;
-  margin-top: 2em;
-  padding-left: 1em;
-  padding-right: 1em;
+  margin: 2rem auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 960px;
   animation: intro 0.3s both;
   animation-delay: 0.35s;
 
   @include breakpoint($x-large) {
-    max-width: $x-large;
+    max-width: 1000px;
   }
 }
+
+body {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.page {
+  width: 100% !important;
+}
+
 
 .page {
   @include breakpoint($large) {
