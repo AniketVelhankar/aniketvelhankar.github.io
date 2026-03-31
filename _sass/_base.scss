@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.3;
   font-family: $header-font-family;
   font-weight: 600;
-  color: #1a1a1a;
+  color: var(--site-foreground);
 }
 
 h1 {
@@ -72,7 +72,7 @@ h1 {
 h2 {
   font-size: $type-size-4;
   font-weight: 700;
-  border-bottom: 2px solid $primary-color;
+  border-bottom: 2px solid var(--site-link);
   padding-bottom: 0.5em;
 }
 
