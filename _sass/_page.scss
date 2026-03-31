@@ -59,6 +59,21 @@
     font-size: 1em;
   }
 
+  /* Task list items - hide bullets, show checkboxes only */
+  ul > li input[type="checkbox"] {
+    margin-right: 0.6em;
+    margin-left: 0;
+    cursor: pointer;
+    accent-color: var(--site-link);
+  }
+
+  ul > li:has(input[type="checkbox"]) {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    line-height: 1.8;
+  }
+
   /* paragraph indents */
   p {
     margin: 0 0 $indent-var;
