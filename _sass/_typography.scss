@@ -1,0 +1,377 @@
+/* ==========================================================================
+   TYPOGRAPHY
+   Heading, body, code, blockquote, and list styles
+   ========================================================================== */
+
+@import "design-system";
+
+/*
+   BASE TEXT STYLING
+   ========================================================================== */
+
+html {
+  font-size: $font-size-base;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: $font-stack-sans;
+  line-height: $line-height-base;
+  color: $color-black;
+  background-color: $color-white;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+   HEADINGS
+   ========================================================================== */
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1.5em 0 0.5em;
+  font-family: $font-stack-sans;
+  font-weight: $font-weight-semibold;
+  line-height: $line-height-tight;
+  color: $color-black;
+
+  // First heading has no top margin
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+h1 {
+  font-size: $h1-size;
+  font-weight: $font-weight-semibold;
+  margin-top: 0;
+  margin-bottom: $space-lg;
+}
+
+h2 {
+  font-size: $h2-size;
+  margin-top: 1.5em;
+  margin-bottom: $space-md;
+}
+
+h3 {
+  font-size: $h3-size;
+  margin-top: 1.3em;
+}
+
+h4 {
+  font-size: $h4-size;
+  margin-top: 1.1em;
+}
+
+h5 {
+  font-size: $h5-size;
+}
+
+h6 {
+  font-size: $h6-size;
+  font-weight: $font-weight-bold;
+}
+
+/*
+   PARAGRAPH
+   ========================================================================== */
+
+p {
+  margin: 0 0 1.5em 0;
+  
+  // Last paragraph doesn't need bottom margin
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/*
+   LINKS
+   ========================================================================== */
+
+a {
+  color: $link-color;
+  text-decoration: $link-decoration;
+  transition: color $transition-base;
+  
+  &:hover {
+    color: $link-color-hover;
+    text-decoration: $link-decoration-hover;
+  }
+  
+  &:visited {
+    color: $link-color-visited;
+  }
+  
+  &:focus {
+    outline: $focus-outline;
+    outline-offset: $focus-outline-offset;
+  }
+  
+  // Code links should be blue
+  code & {
+    color: $link-color;
+  }
+}
+
+/*
+   STRONG & EMPHASIS
+   ========================================================================== */
+
+strong, b {
+  font-weight: $font-weight-bold;
+  color: $color-black;
+}
+
+em, i {
+  font-style: italic;
+}
+
+small, .small {
+  font-size: $font-size-sm;
+}
+
+/*
+   LISTS
+   ========================================================================== */
+
+ul, ol {
+  margin: 0 0 1.5em $list-margin-left;
+  padding: 0;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+  
+  // Nested lists
+  ul, ol {
+    margin-bottom: 0;
+    margin-top: $space-sm;
+  }
+}
+
+li {
+  margin-bottom: $list-item-margin-bottom;
+  line-height: $line-height-relaxed;
+  
+  @media (max-width: $breakpoint-md) {
+    margin-bottom: 0.3em;
+  }
+}
+
+// Definition lists
+dt {
+  font-weight: $font-weight-bold;
+  margin-top: $space-md;
+  margin-bottom: 0;
+}
+
+dd {
+  margin-left: $space-lg;
+  margin-bottom: $space-md;
+}
+
+/*
+   BLOCKQUOTE
+   ========================================================================== */
+
+blockquote {
+  margin: $space-lg 0;
+  padding: $blockquote-padding;
+  border-left: $blockquote-border-width solid $blockquote-border-color;
+  background-color: $color-gray-light;
+  color: $blockquote-color;
+  font-style: italic;
+  
+  p {
+    margin-bottom: $space-md;
+  }
+  
+  p:last-child {
+    margin-bottom: 0;
+  }
+  
+  cite {
+    display: block;
+    font-style: normal;
+    margin-top: $space-md;
+    
+    &:before {
+      content: "\2014 ";
+    }
+  }
+}
+
+/*
+   CODE
+   ========================================================================== */
+
+code {
+  font-family: $font-stack-mono;
+  font-size: $code-font-size;
+  background-color: $color-code-bg;
+  padding: 2px 6px;
+  color: $color-black;
+  border-radius: $border-radius-sm;
+  line-height: 1;
+}
+
+pre {
+  margin: 0 0 1.5em 0;
+  padding: $code-padding;
+  background-color: $color-code-bg;
+  border: 1px solid $color-border;
+  border-radius: $border-radius-md;
+  overflow-x: auto;
+  
+  code {
+    background-color: transparent;
+    padding: 0;
+    color: $color-black;
+    border: none;
+    font-size: 0.9rem;
+    line-height: $line-height-relaxed;
+  }
+}
+
+/*
+   MISC ELEMENTS
+   ========================================================================== */
+
+hr {
+  display: block;
+  margin: 2em 0;
+  padding: 0;
+  height: 1px;
+  border: 0;
+  background-color: $color-border;
+}
+
+mark {
+  background-color: #fff3cd;
+  padding: 2px 4px;
+}
+
+sup, sub {
+  font-size: $font-size-sm;
+  line-height: 0;
+  position: relative;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/*
+   ABBREVIATION
+   ========================================================================== */
+
+abbr[title] {
+  border-bottom: 1px dotted $color-border;
+  cursor: help;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 0.05em;
+}
+
+/*
+   RESPONSIVE TYPOGRAPHY
+   ========================================================================== */
+
+@media (max-width: $breakpoint-md) {
+  h1 {
+    font-size: 2rem;
+    margin-bottom: $space-md;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+  }
+  
+  h4 {
+    font-size: 1.1rem;
+  }
+  
+  p {
+    font-size: 1rem;
+  }
+  
+  code {
+    font-size: 0.9em;
+  }
+}
+
+/*
+   UTILITY CLASSES
+   ========================================================================== */
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-muted {
+  color: $color-gray-text;
+}
+
+.text-meta {
+  color: $color-gray-meta;
+  font-size: $font-size-sm;
+}
+
+.text-xlarge {
+  font-size: $font-size-lg;
+}
+
+.text-small {
+  font-size: $font-size-sm;
+}
+
+.text-tiny {
+  font-size: $font-size-xs;
+}
+
+.text-semibold {
+  font-weight: $font-weight-semibold;
+}
+
+.text-bold {
+  font-weight: $font-weight-bold;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+.font-mono {
+  font-family: $font-stack-mono;
+}
+
+.font-serif {
+  font-family: $font-stack-serif;
+}

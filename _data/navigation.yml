@@ -1,13 +1,16 @@
-# main links links
+# Main navigation links (content-first design)
 main:
   - title: "Home"
     url: /
-
+  
   - title: "Blog"
-    url: /year-archive/
-
+    url: /blog/
+  
   - title: "Papers"
     url: /papers/
-
+  
+  - title: "About"
+    url: /about-me/
+  
   - title: "List 100"
     url: /list-100/

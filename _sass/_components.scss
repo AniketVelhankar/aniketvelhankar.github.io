@@ -1,0 +1,497 @@
+/* ==========================================================================
+   COMPONENTS
+   Buttons, links, cards, code blocks, forms
+   ========================================================================== */
+
+@import "design-system";
+
+/*
+   BUTTONS
+   ========================================================================== */
+
+.btn {
+  display: inline-block;
+  padding: $button-padding;
+  margin: 0;
+  font-family: $font-stack-sans;
+  font-size: 1rem;
+  font-weight: $button-font-weight;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  border: none;
+  border-radius: $button-border-radius;
+  background-color: $button-background;
+  color: $button-color;
+  transition: background-color $transition-base;
+  
+  &:hover, &:focus {
+    background-color: $button-hover-background;
+    text-decoration: none;
+  }
+  
+  &:focus {
+    outline: $focus-outline;
+    outline-offset: $focus-outline-offset;
+  }
+  
+  // Secondary button variant
+  &--secondary {
+    background-color: transparent;
+    color: $color-primary;
+    border: 1px solid $color-primary;
+    
+    &:hover, &:focus {
+      background-color: $color-primary-light;
+      border-color: $color-primary-hover;
+    }
+  }
+  
+  // Small button variant
+  &--small {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+  
+  // Large button variant
+  &--large {
+    padding: 12px 24px;
+    font-size: 1.1rem;
+  }
+}
+
+/*
+   LINKS
+   ========================================================================== */
+
+.link {
+  color: $link-color;
+  text-decoration: none;
+  transition: color $transition-base;
+  
+  &:hover {
+    color: $link-color-hover;
+    text-decoration: underline;
+  }
+  
+  &:focus {
+    outline: $focus-outline;
+    outline-offset: $focus-outline-offset;
+  }
+}
+
+// Arrow links
+.link-arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  
+  &:after {
+    content: "→";
+    transition: transform $transition-base;
+  }
+  
+  &:hover:after {
+    transform: translateX(4px);
+  }
+}
+
+/*
+   CARDS
+   ========================================================================== */
+
+.card {
+  background-color: $color-white;
+  border: 1px solid $color-border;
+  border-radius: $border-radius-md;
+  padding: $space-lg;
+  transition: all $transition-base;
+  
+  &:hover {
+    border-color: $color-primary;
+    box-shadow: $shadow-subtle;
+  }
+  
+  h3 {
+    margin-top: 0;
+  }
+  
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// Card with left border accent
+.card--accent {
+  border-left: 4px solid $color-primary;
+  border-left-color: $color-primary;
+  
+  &:hover {
+    border-left-color: $color-primary-hover;
+  }
+}
+
+/*
+   LIST STYLES
+   ========================================================================== */
+
+// Horizontal list (comma-separated)
+.list-inline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-sm;
+  
+  li {
+    margin: 0;
+    
+    &:not(:last-child) {
+      &:after {
+        content: ",";
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+// Tags/badges
+.tag {
+  display: inline-block;
+  padding: 4px 8px;
+  margin-right: $space-sm;
+  margin-bottom: $space-sm;
+  background-color: $color-gray-light;
+  border-radius: $border-radius-md;
+  font-size: $font-size-sm;
+  color: $color-gray-text;
+  text-decoration: none;
+  transition: all $transition-base;
+  
+  &:hover {
+    background-color: $color-primary-light;
+    color: $color-primary;
+  }
+}
+
+/*
+   BADGES
+   ========================================================================== */
+
+.badge {
+  display: inline-block;
+  padding: 2px 6px;
+  font-size: 0.75rem;
+  font-weight: $font-weight-bold;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: $border-radius-sm;
+  background-color: $color-gray-light;
+  color: $color-black;
+  
+  &--primary {
+    background-color: $color-primary;
+    color: $color-white;
+  }
+  
+  &--success {
+    background-color: #28a745;
+    color: $color-white;
+  }
+  
+  &--warning {
+    background-color: #ffc107;
+    color: $color-black;
+  }
+  
+  &--danger {
+    background-color: #dc3545;
+    color: $color-white;
+  }
+}
+
+/*
+   FORMS
+   ========================================================================== */
+
+input, textarea, select {
+  font-family: $font-stack-sans;
+  font-size: 1rem;
+}
+
+.input {
+  padding: $input-padding;
+  border: $input-border;
+  border-radius: $input-border-radius;
+  background-color: $color-white;
+  color: $color-black;
+  transition: border-color $transition-base, box-shadow $transition-base;
+  
+  &:focus {
+    outline: none;
+    border-color: $color-primary;
+    box-shadow: 0 0 0 3px $color-primary-light;
+  }
+  
+  &:disabled {
+    background-color: $color-gray-light;
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+}
+
+.input-group {
+  margin-bottom: $space-lg;
+}
+
+label {
+  display: block;
+  margin-bottom: $space-sm;
+  font-weight: $font-weight-semibold;
+  color: $color-black;
+}
+
+.input-help {
+  display: block;
+  margin-top: 4px;
+  font-size: $font-size-sm;
+  color: $color-gray-text;
+}
+
+/*
+   DIVIDERS
+   ========================================================================== */
+
+.divider {
+  height: 1px;
+  background-color: $color-border;
+  margin: $space-lg 0;
+  border: none;
+}
+
+/*
+   ALERTS
+   ========================================================================== */
+
+.alert {
+  padding: $space-lg;
+  margin-bottom: $space-lg;
+  border-radius: $border-radius-md;
+  border-left: 4px solid;
+
+  &--info {
+    background-color: $color-primary-light;
+    border-left-color: $color-primary;
+    color: $color-primary;
+  }
+
+  &--success {
+    background-color: #d4edda;
+    border-left-color: #28a745;
+    color: #155724;
+  }
+
+  &--warning {
+    background-color: #fff3cd;
+    border-left-color: #ffc107;
+    color: #856404;
+  }
+
+  &--danger {
+    background-color: #f8d7da;
+    border-left-color: #dc3545;
+    color: #721c24;
+  }
+
+  p {
+    margin: 0;
+    
+    &:not(:last-child) {
+      margin-bottom: $space-sm;
+    }
+  }
+}
+
+/*
+   IMAGES
+   ========================================================================== */
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.img-round {
+  border-radius: $border-radius-lg;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+.img-shadow {
+  box-shadow: $shadow-subtle;
+}
+
+/*
+   FIGURE
+   ========================================================================== */
+
+figure {
+  margin: $space-lg 0;
+  text-align: center;
+  
+  img {
+    margin-bottom: $space-sm;
+  }
+}
+
+figcaption {
+  font-size: $font-size-sm;
+  color: $color-gray-text;
+  font-style: italic;
+}
+
+/*
+   TABLES
+   ========================================================================== */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: $space-lg;
+  font-size: 0.95em;
+  
+  th {
+    background-color: $color-gray-light;
+    padding: $space-md;
+    text-align: left;
+    font-weight: $font-weight-bold;
+    border-bottom: 2px solid $color-border;
+  }
+  
+  td {
+    padding: $space-md;
+    border-bottom: 1px solid $color-border;
+  }
+  
+  tr:last-child td {
+    border-bottom: none;
+  }
+}
+
+/*
+   BREADCRUMBS
+   ========================================================================== */
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: $space-sm;
+  margin-bottom: $space-lg;
+  font-size: $font-size-sm;
+  
+  a {
+    color: $link-color;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  
+  .separator {
+    color: $color-gray-text;
+    opacity: 0.5;
+  }
+}
+
+/*
+   PAGINATION
+   ========================================================================== */
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: $space-sm;
+  list-style: none;
+  margin: $space-2xl 0;
+  padding: 0;
+  
+  li {
+    margin: 0;
+  }
+  
+  a {
+    display: block;
+    padding: 8px 12px;
+    border-radius: $border-radius-md;
+    border: 1px solid $color-border;
+    color: $link-color;
+    text-decoration: none;
+    transition: all $transition-base;
+    
+    &:hover {
+      background-color: $color-primary-light;
+      border-color: $color-primary;
+      color: $color-primary;
+    }
+  }
+  
+  .active a {
+    background-color: $color-primary;
+    border-color: $color-primary;
+    color: $color-white;
+  }
+  
+  .disabled {
+    opacity: 0.5;
+  }
+}
+
+/*
+   TOOLTIP
+   ========================================================================== */
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  
+  &:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.tooltip-text {
+  visibility: hidden;
+  background-color: $color-black;
+  color: $color-white;
+  text-align: center;
+  padding: 6px 10px;
+  border-radius: $border-radius-sm;
+  position: absolute;
+  z-index: 1000;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: 0.85rem;
+  opacity: 0;
+  transition: opacity $transition-base;
+  
+  &:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid transparent;
+    border-top-color: $color-black;
+  }
+}
