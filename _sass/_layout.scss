@@ -1,0 +1,346 @@
+/* ==========================================================================
+   LAYOUT & GRID
+   Container, width constraints, margins, padding
+   ========================================================================== */
+
+@import "design-system";
+
+/*
+   BASE CONTAINER
+   ========================================================================== */
+
+.container {
+  width: 100%;
+  max-width: $max-width-prose;
+  margin: 0 auto;
+  padding-left: $gutter-mobile;
+  padding-right: $gutter-mobile;
+
+  @media (min-width: $breakpoint-md) {
+    padding-left: $gutter-desktop;
+    padding-right: $gutter-desktop;
+  }
+}
+
+.container-narrow {
+  width: 100%;
+  max-width: $max-width-narrow;
+  margin: 0 auto;
+  padding-left: $gutter-mobile;
+  padding-right: $gutter-mobile;
+
+  @media (min-width: $breakpoint-md) {
+    padding-left: $gutter-desktop;
+    padding-right: $gutter-desktop;
+  }
+}
+
+.container-wide {
+  width: 100%;
+  max-width: $max-width-wide;
+  margin: 0 auto;
+  padding-left: $gutter-mobile;
+  padding-right: $gutter-mobile;
+
+  @media (min-width: $breakpoint-md) {
+    padding-left: $gutter-desktop;
+    padding-right: $gutter-desktop;
+  }
+}
+
+/*
+   WRAPPER (Full-width sections)
+   ========================================================================== */
+
+.wrapper {
+  width: 100%;
+
+  // Hero sections, masthead, footer
+  &--hero {
+    padding: $space-2xl $gutter-mobile;
+
+    @media (min-width: $breakpoint-md) {
+      padding: $space-3xl $gutter-desktop;
+    }
+  }
+
+  &--padded {
+    padding: $space-2xl $gutter-mobile;
+
+    @media (min-width: $breakpoint-md) {
+      padding: $space-2xl $gutter-desktop;
+    }
+  }
+}
+
+/*
+   SPACING UTILITIES
+   ========================================================================== */
+
+// Margin utilities
+.m-0 { margin: 0; }
+.m-xs { margin: $space-xs; }
+.m-sm { margin: $space-sm; }
+.m-md { margin: $space-md; }
+.m-lg { margin: $space-lg; }
+.m-xl { margin: $space-xl; }
+.m-2xl { margin: $space-2xl; }
+
+.mt-0 { margin-top: 0; }
+.mt-xs { margin-top: $space-xs; }
+.mt-sm { margin-top: $space-sm; }
+.mt-md { margin-top: $space-md; }
+.mt-lg { margin-top: $space-lg; }
+.mt-xl { margin-top: $space-xl; }
+.mt-2xl { margin-top: $space-2xl; }
+
+.mb-0 { margin-bottom: 0; }
+.mb-xs { margin-bottom: $space-xs; }
+.mb-sm { margin-bottom: $space-sm; }
+.mb-md { margin-bottom: $space-md; }
+.mb-lg { margin-bottom: $space-lg; }
+.mb-xl { margin-bottom: $space-xl; }
+.mb-2xl { margin-bottom: $space-2xl; }
+
+.mx-auto { margin-left: auto; margin-right: auto; }
+
+// Padding utilities
+.p-0 { padding: 0; }
+.p-xs { padding: $space-xs; }
+.p-sm { padding: $space-sm; }
+.p-md { padding: $space-md; }
+.p-lg { padding: $space-lg; }
+.p-xl { padding: $space-xl; }
+.p-2xl { padding: $space-2xl; }
+
+.px-md { padding-left: $space-md; padding-right: $space-md; }
+.px-lg { padding-left: $space-lg; padding-right: $space-lg; }
+
+.py-md { padding-top: $space-md; padding-bottom: $space-md; }
+.py-lg { padding-top: $space-lg; padding-bottom: $space-lg; }
+
+/*
+   FLEX UTILITIES
+   ========================================================================== */
+
+.flex {
+  display: flex;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-gap-sm {
+  gap: $space-sm;
+}
+
+.flex-gap-md {
+  gap: $space-md;
+}
+
+.flex-gap-lg {
+  gap: $space-lg;
+}
+
+/*
+   GRID LAYOUT (Simple 2-column)
+   ========================================================================== */
+
+.grid {
+  display: grid;
+  gap: $space-lg;
+
+  @media (min-width: $breakpoint-md) {
+    gap: $space-2xl;
+  }
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $space-lg;
+
+  @media (min-width: $breakpoint-md) {
+    grid-template-columns: 1fr 1fr;
+    gap: $space-2xl;
+  }
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $space-lg;
+
+  @media (min-width: $breakpoint-md) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: $space-2xl;
+  }
+}
+
+/*
+   POSITIONING
+   ========================================================================== */
+
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+/*
+   VISIBILITY
+   ========================================================================== */
+
+.hidden {
+  display: none;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+@media (max-width: $breakpoint-md) {
+  .hide-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: $breakpoint-lg) {
+  .hide-desktop {
+    display: none;
+  }
+}
+
+/*
+   OVERFLOW
+   ========================================================================== */
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
+/*
+   WIDTH & HEIGHT
+   ========================================================================== */
+
+.w-full {
+  width: 100%;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-auto {
+  height: auto;
+}
+
+/*
+   VERTICAL ALIGN
+   ========================================================================== */
+
+.align-top {
+  vertical-align: top;
+}
+
+.align-middle {
+  vertical-align: middle;
+}
+
+.align-bottom {
+  vertical-align: bottom;
+}
+
+/*
+   CLEAR & RESET
+   ========================================================================== */
+
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+/*
+   RESPONSIVE BREAKPOINTS
+   ========================================================================== */
+
+@media (max-width: $breakpoint-sm) {
+  body {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: $breakpoint-md) {
+  .container, .container-narrow, .container-wide {
+    padding-left: $gutter-mobile;
+    padding-right: $gutter-mobile;
+  }
+}
+
+@media (min-width: $breakpoint-lg) {
+  .container, .container-narrow, .container-wide {
+    padding-left: $gutter-desktop;
+    padding-right: $gutter-desktop;
+  }
+}

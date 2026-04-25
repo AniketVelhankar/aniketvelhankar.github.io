@@ -1,24 +1,105 @@
 {% include base_path %}
 
-<div class="page__footer-follow">
-  <ul class="social-icons">
-    {% if site.data.ui-text[site.locale].follow_label %}
-      <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
-    {% endif %}
-    {% if site.twitter.username %}
-      <li><a href="https://twitter.com/{{ site.twitter.username }}"><i class="fab fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
-    {% endif %}
-    {% if site.facebook.username %}
-      <li><a href="https://facebook.com/{{ site.facebook.username }}"><i class="fab fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
-    {% endif %}
-    {% if site.author.github %}
-      <li><a href="http://github.com/{{ site.author.github }}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
-    {% endif %}
-    {% if site.author.bitbucket %}
-      <li><a href="http://bitbucket.org/{{ site.author.bitbucket }}"><i class="fab fa-bitbucket" aria-hidden="true"></i> Bitbucket</a></li>
-    {% endif %}
-    <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
-  </ul>
-</div>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__content">
+      <!-- Contact section -->
+      <div class="footer__section">
+        <h3 class="footer__heading">Get in touch</h3>
+        <ul class="footer__links">
+          {% if site.twitter.username %}
+            <li><a href="https://twitter.com/{{ site.twitter.username }}" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+          {% endif %}
+          {% if site.author.github %}
+            <li><a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          {% endif %}
+          <li><a href="mailto:{{ site.author.email }}">Email</a></li>
+        </ul>
+      </div>
 
-<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+      <!-- Copyright -->
+      <div class="footer__copyright">
+        <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. Made with care.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    margin-top: 4rem;
+    padding: 2rem 0;
+    border-top: 1px solid #e0e0e0;
+    background-color: #fafafa;
+    font-size: 0.95rem;
+  }
+
+  .footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .footer__section {
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .footer__heading {
+    margin: 0 0 1rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #666;
+  }
+
+  .footer__links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .footer__links a {
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .footer__links a:hover {
+    color: #0052a3;
+    text-decoration: underline;
+  }
+
+  .footer__copyright {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e0e0e0;
+    color: #999;
+    font-size: 0.9rem;
+  }
+
+  .footer__copyright p {
+    margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    .site-footer {
+      margin-top: 3rem;
+      padding: 1.5rem 0;
+    }
+
+    .footer__content {
+      flex-direction: column;
+    }
+
+    .footer__copyright {
+      margin-top: 1.5rem;
+    }
+  }
+</style>

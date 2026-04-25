@@ -1,52 +1,145 @@
 {% include base_path %}
 
-<div class="masthead">
-  <div class="masthead__inner-wrap">
-    <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
-        <button><div class="navicon"></div></button>
-        <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/">{{ site.title }}</a></li>
-          {% for link in site.data.navigation.main %}
-            {% if link.url contains 'http' %}
-              {% assign domain = '' %}
-              {% else %}
-              {% assign domain = base_path %}
-            {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
-          {% endfor %}
-        </ul>
-        <button id="dark-mode-toggle" aria-live="polite" aria-label="Toggle dark mode">🌙</button>
-        <ul class="hidden-links hidden"></ul>
-      </nav>
+<header class="site-header">
+  <nav class="site-nav">
+    <div class="site-nav__container container">
+      <!-- Logo/Wordmark -->
+      <div class="site-nav__brand">
+        <a href="{{ base_path }}/" class="site-nav__title">{{ site.title }}</a>
+      </div>
+
+      <!-- Main Navigation -->
+      <ul class="site-nav__menu">
+        {% for link in site.data.navigation.main %}
+          {% if link.url contains 'http' %}
+            {% assign domain = '' %}
+          {% else %}
+            {% assign domain = base_path %}
+          {% endif %}
+          <li class="site-nav__item">
+            <a href="{{ domain }}{{ link.url }}" class="site-nav__link">{{ link.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+
+      <!-- Mobile Menu Button -->
+      <button class="site-nav__toggle" aria-label="Toggle navigation menu" id="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
-  </div>
-</div>
+  </nav>
+</header>
+
+<style>
+  .site-header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border-bottom: 1px solid #e0e0e0;
+    z-index: 100;
+  }
+
+  .site-nav {
+    padding: 1rem 0;
+  }
+
+  .site-nav__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .site-nav__brand a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+  }
+
+  .site-nav__brand a:hover {
+    color: #0066cc;
+  }
+
+  .site-nav__menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .site-nav__link {
+    color: #000;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+  }
+
+  .site-nav__link:hover {
+    color: #0066cc;
+  }
+
+  .site-nav__toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+  }
+
+  .site-nav__toggle span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: #000;
+    margin: 5px 0;
+    transition: 0.3s;
+  }
+
+  @media (max-width: 768px) {
+    .site-nav__toggle {
+      display: block;
+    }
+
+    .site-nav__menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      background: white;
+      gap: 0;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .site-nav__menu.active {
+      display: flex;
+    }
+
+    .site-nav__item {
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .site-nav__link {
+      display: block;
+      padding: 1rem 1.5rem;
+    }
+  }
+</style>
 
 <script>
-(function () {
-  var storageKey = 'site-theme';
-  var classNameDark = 'dark-mode';
-  var classNameLight = 'light-mode';
-  function setTheme(theme) {
-    document.documentElement.classList.remove(classNameDark, classNameLight);
-    document.documentElement.classList.add(theme);
-    localStorage.setItem(storageKey, theme);
-    var btn = document.getElementById('dark-mode-toggle');
-    if (btn) btn.textContent = theme === classNameDark ? '☀️' : '🌙';
-  }
-  function getPreferredTheme() {
-    var stored = localStorage.getItem(storageKey);
-    if (stored === classNameDark || stored === classNameLight) return stored;
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? classNameDark : classNameLight;
-  }
-  setTheme(getPreferredTheme());
-  var toggle = document.getElementById('dark-mode-toggle');
-  if (toggle) {
-    toggle.addEventListener('click', function() {
-      var next = document.documentElement.classList.contains(classNameDark) ? classNameLight : classNameDark;
-      setTheme(next);
+  document.getElementById('nav-toggle').addEventListener('click', function() {
+    document.querySelector('.site-nav__menu').classList.toggle('active');
+  });
+
+  // Close menu when link is clicked
+  document.querySelectorAll('.site-nav__link').forEach(link => {
+    link.addEventListener('click', function() {
+      document.querySelector('.site-nav__menu').classList.remove('active');
     });
-  }
-})();
+  });
 </script>
