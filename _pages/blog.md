@@ -2,12 +2,12 @@
 layout: default
 title: "Blog"
 permalink: /blog/
-excerpt: "All articles and posts"
+excerpt: "Articles and posts"
 ---
 
 <div class="container" style="padding-top: 2rem;">
   <h1 style="margin-top: 0;">Blog</h1>
-  <p style="color: #666; margin-bottom: 2rem;">Technical writing on deep learning, computer vision, and building ML systems in production.</p>
+  <p style="color: #666; margin-bottom: 2rem;">Thoughts and articles on software engineering, technology, and building things.</p>
 
   {% assign posts = site.posts | sort: 'date' | reverse %}
   

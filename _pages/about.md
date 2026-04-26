@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: ""
-excerpt: "Aniket Velhankar - Deep Learning & Computer Vision Researcher"
+excerpt: "Aniket Velhankar - Software Engineer | DevOps | Platform Engineering"
 layout: splash
 redirect_from:
   - /about/
@@ -10,42 +10,40 @@ redirect_from:
 
 # Aniket Velhankar
 
-I'm a software engineer focused on **deep learning, computer vision, and ML systems in production**. I write about shipping practical models, optimizing neural networks, and building AI systems that work in the real world.
+I'm a **software engineer** with over four years of professional experience building scalable systems and innovative solutions. Currently, I work as a **Consultant Specialist in Investment Banking** at HSBC, where I focus on designing robust solutions for complex banking systems.
 
-Previously, I've worked on production ML systems that needed to serve millions of requests while maintaining quality. I'm interested in the intersection of research and engineering—taking cutting-edge ideas and making them run fast, reliable, and cheap.
-
----
-
-## Latest Writing
-
-- **[From Research to Production: Deploying Custom Object Detectors](/blog/)** — How vision models go from papers to products
-- **[Efficient Model Architectures for Mobile Inference](/blog/)** — Making models small, fast, and lean  
-- **[Neural Network Optimization at Scale](/blog/)** — Techniques for training large models efficiently
-
-[Read all posts →](/blog/)
+My expertise spans **DevOps practices, CI/CD pipelines, platform engineering, microservices development using Java Spring, and cloud technologies**. I'm passionate about creating practical solutions that address real challenges and enabling teams to build and ship reliably.
 
 ---
 
-## Featured Projects
+## What I Do
 
-- **Vision Transformers**: Scaling vision models to billions of parameters
-- **Real-Time Detection**: Multi-object tracking for resource-constrained devices
-- **ML Deployment**: Building inference pipelines for production
-
-[See all work →](/papers/)
+- **DevOps & Infrastructure**: Architecting deployment pipelines and infrastructure that scale
+- **Platform Engineering**: Building tools and systems that improve developer velocity
+- **Microservices & Backend**: Designing distributed systems with Java Spring and cloud-native approaches
+- **Systems Design**: Creating reliable, observable, and maintainable systems
 
 ---
 
-## Contact & Links
+## Experience Highlights
+
+- **4+ years** in professional software engineering across diverse roles
+- Led initiatives in **DevOps collaboration, Platform Engineering, and Data Automation** at HSBC
+- Worked across **Chief Technology Office, Wealth & Private Banking, and Global Banking divisions**
+- Participant in **Smart India Hackathon (2018, 2020), CDAC AI Hackathon, and IIT Madras competitions**
+
+---
+
+## Let's Connect
+
+Interested in discussing software engineering, DevOps, platform architecture, or collaboration opportunities?
 
 - **Email**: [aniket.velhankar@gmail.com](mailto:aniket.velhankar@gmail.com)
 - **GitHub**: [@aniketvelhankar](https://github.com/aniketvelhankar)
-- **LinkedIn**: [aniket-velhankar](https://www.linkedin.com/in/aniket-velhankar/)
+- **LinkedIn**: [/in/aniket-velhankar](https://www.linkedin.com/in/aniket-velhankar/)
 
 ---
 
-I spend time reading about ML systems, distributed computing, and how to build products that scale. You can explore my [100 goals](/list-100/) and ongoing learning pursuits.
-
-**This site is being redesigned** to focus on clear writing, practical insights, and useful resources for engineers building AI systems.
+**[Learn more about me](/about-me/) · [View my CV](/cv/) · [See resources](/papers/)**
 
 
