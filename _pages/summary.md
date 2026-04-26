@@ -2,67 +2,56 @@
 layout: archive
 title: "Summary"
 permalink: /summary/
-author_profile: true
 ---
 
 ## About Me
 
-I'm **Aniket Velhankar**, a deep learning researcher and computer vision enthusiast from Pune, India. My mission is to bridge the gap between cutting-edge research and real-world applications.
+I'm **Aniket Velhankar**, a software engineer from Pune, India, with over four years of professional experience building scalable systems and innovative solutions.
 
 ---
 
-## Expertise
+## Focus Areas
 
-**Deep Learning**
-- Neural network architecture, CNNs, Transformers, model optimization
+**Software Engineering**
+- Building robust, scalable systems for enterprise environments
+- Optimizing for performance, reliability, and maintainability
 
-**Computer Vision**
-- Object detection, image segmentation, image classification, visual understanding
+**DevOps & Infrastructure**
+- CI/CD pipelines and deployment automation
+- Infrastructure as code and cloud-native architectures
 
-**Technical Skills**
-- PyTorch, TensorFlow, Python, data processing, model deployment
-
-**Research**
-- Applied research, production ML systems, model interpretability, real-world applications
-
----
-
-## Education
-
-**Pune Institute of Computer Technology (P.I.C.T)**
-- Bachelor of Computer Science | Final Year Student
+**Platform Engineering**
+- Improving developer experience and velocity
+- Building tools and systems that enable teams to scale
 
 **Continuous Learning**
-- Exploring advanced topics in deep learning, computer vision, and production ML systems
-
----
-
-## Achievements
-
-- Runners-up award from NICE Ltd. for innovative project development
-- Active open-source contributor with focus on ML/AI
-- Research-focused on practical applications of deep learning
+- Staying current with evolving technologies and practices
+- Bridging gaps between theory and practical application
 
 ---
 
 ## Philosophy
 
-- **Practical Impact** — Research should lead to real-world applications
-- **Continuous Growth** — Technology evolves; always learning
-- **Open Collaboration** — Knowledge sharing drives innovation
-- **Quality Over Quantity** — Deep understanding over breadth
-- **Problem-Solving** — Focus on solving problems, not just building models
+- **Practical Impact** — Solutions should solve real problems
+- **Continuous Improvement** — Always learning and iterating
+- **Collaboration** — Best work happens in supportive teams
+- **Reliability** — Systems should be observable, maintainable, and trustworthy
 
 ---
 
 ## Let's Connect
 
-I'm always interested in collaborating on ML projects, discussing computer vision, and exploring new applications.
+Feel free to reach out to discuss:
 
-**Email:** [aniket.velhankar@gmail.com](mailto:aniket.velhankar@gmail.com)  
-**GitHub:** [@aniketvelhankar](https://github.com/aniketvelhankar)  
-**LinkedIn:** [Aniket Velhankar](https://www.linkedin.com/in/aniket-velhankar/)
+- Software engineering challenges and solutions
+- DevOps, platform engineering, and systems design
+- Opportunities to collaborate and create impact
+- Professional development and mentoring
+
+**Email**: [aniket.velhankar@gmail.com](mailto:aniket.velhankar@gmail.com)  
+**LinkedIn**: [/in/aniket-velhankar](https://www.linkedin.com/in/aniket-velhankar/)  
+**GitHub**: [@aniketvelhankar](https://github.com/aniketvelhankar)
 
 ---
 
-[Home](/) • [Papers](/papers/) • [List 100](/list-100/)
+[Home](/) • [CV](/cv/) • [About](/about-me/)

@@ -7,91 +7,82 @@ excerpt: "Who I am and what I do"
 
 # About Me
 
-Hi! I'm **Aniket Velhankar**, a software engineer building AI systems that work in production environments. I focus on the practical side of machine learning—taking research ideas and shipping them as systems that users depend on.
+Hi! I'm **Aniket Velhankar**, a software engineer with over four years of professional experience building innovative solutions to address large-scale challenges.
 
 ---
 
 ## What I Do
 
-My main areas of focus:
+I currently serve as a **Consultant Specialist in Investment Banking** within the Global Banking division at HSBC. My work focuses on designing and implementing robust solutions that drive efficiency and innovation across complex banking systems.
 
-- **Deep Learning & Computer Vision**: Building and optimizing neural networks for real-world applications
-- **ML Systems Engineering**: Training, deploying, and maintaining ML systems at scale
-- **Model Optimization**: Making models faster, cheaper, and more efficient while maintaining quality
-- **Technical Writing**: Sharing what I learn through detailed articles and guides
+My core expertise includes:
 
-I'm particularly interested in the gap between research and production—how to take a paper and turn it into something reliable, fast, and maintainable.
-
----
-
-## Background
-
-I've worked on production machine learning systems that needed to:
-
-- Serve millions of requests per day with strict latency requirements
-- Maintain accuracy while reducing inference costs
-- Handle varying data distributions and edge cases
-- Scale from research prototypes to enterprise systems
-
-This experience taught me that good ML engineering isn't just about having the best model—it's about building systems that are reliable, observable, and efficient.
+- **DevOps & CI/CD**: Architecting and maintaining deployment pipelines for reliable, scalable systems
+- **Platform Engineering**: Building infrastructure and tools that enable development teams to ship faster and more reliably
+- **Microservices Development**: Designing distributed systems using Java Spring and cloud-native architectures
+- **Cloud Technologies**: Leveraging cloud platforms to build resilient, cost-effective solutions
+- **Data Automation**: Streamlining processes through intelligent automation and data engineering
 
 ---
 
-## Current Interests
+## My Journey at HSBC
 
-Right now I'm focused on:
+My career at HSBC has been diverse and impactful:
 
-- **Vision Models at Scale**: How to efficiently train and serve large vision models
-- **Model Compression**: Techniques for making models smaller without losing too much accuracy
-- **Production ML Infrastructure**: Tools and practices for reliable model deployment
-- **ML Fundamentals**: Deep dives into why certain techniques work and how to apply them effectively
+- Collaborated with DevOps teams to optimize deployment strategies and infrastructure
+- Contributed to platform engineering initiatives that improved developer velocity
+- Designed and built data automation solutions within the Chief Technology Office
+- Worked across Wealth & Private Banking divisions on mission-critical systems
+- Shipped solutions that directly improved operational efficiency and reduced technical debt
 
----
-
-## Principles
-
-A few things I believe about building AI systems:
-
-1. **Understand your constraints**: Optimize for what actually matters (latency, cost, accuracy)
-2. **Measure everything**: Don't guess—instrument your systems and track what's important
-3. **Start simple**: Complex solutions often hide their weaknesses. Simple baselines are your friend
-4. **Understand the data**: Most ML problems are really data problems in disguise
-5. **Keep learning**: This field moves fast, and there's always more to discover
+This experience taught me that great software engineering isn't just about writing code—it's about understanding business needs, designing systems that scale, and creating solutions that people actually want to use.
 
 ---
 
-## Education
+## Technical Interests
 
-- B.S. in Computer Science with focus on ML and distributed systems
-- Ongoing learning through reading papers, building projects, and writing about what I learn
+I'm passionate about:
+
+- **Scalable Systems Design**: How to build systems that grow with business needs
+- **Developer Experience**: Making it easy and pleasant for teams to build and deploy
+- **Practical Innovation**: Finding elegant solutions to real-world engineering challenges
+- **Continuous Improvement**: Iterating on processes and systems to drive better outcomes
 
 ---
 
-## Beyond Code
+## Credentials & Commitment to Learning
 
-When I'm not working on ML systems, I'm:
+- Certified in Python (PCAP)
+- Specialization in Deep Learning
+- Participant in prestigious competitions: Smart India Hackathon (2018, 2020), CDAC AI Hackathon, IIT Madras data science contests
 
-- Reading about AI, systems design, and how technology shapes society
-- Working on personal projects that explore new techniques
-- Mentoring and helping other engineers grow
-- Taking note-long walks to think through problems
+---
+
+## Beyond Work
+
+I'm deeply committed to:
+
+- Creating practical solutions that address meaningful challenges
+- Mentoring and collaborating with talented engineers
+- Staying current with evolving technologies and best practices
+- Building a supportive community of innovators
 
 ---
 
 ## Let's Connect
 
-I'm always interested in talking about:
+I'm always interested in discussing:
 
-- Practical ML challenges and solutions
-- How to build better AI systems
-- Teaching and mentoring opportunities
-- Interesting technical problems
+- Innovative engineering solutions and technical challenges
+- DevOps, platform engineering, and system design
+- Opportunities to collaborate and drive impact
+- Mentoring and knowledge sharing
 
 Feel free to reach out:
 
 - **Email**: [aniket.velhankar@gmail.com](mailto:aniket.velhankar@gmail.com)
 - **GitHub**: [@aniketvelhankar](https://github.com/aniketvelhankar)
-- **LinkedIn**: [Connect on LinkedIn](https://www.linkedin.com/in/aniket-velhankar/)
+- **LinkedIn**: [/in/aniket-velhankar](https://www.linkedin.com/in/aniket-velhankar/)
 
 ---
 

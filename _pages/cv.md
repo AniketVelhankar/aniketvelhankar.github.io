@@ -2,7 +2,6 @@
 layout: archive
 title: "CV"
 permalink: /cv/
-author_profile: true
 redirect_from:
   - /resume
 ---
@@ -122,27 +121,33 @@ redirect_from:
 
 ## Curriculum Vitae
 
-<a href="https://drive.google.com/file/d/15qjJZFD9DP-erBH70RvkqBszQYCH5RiZ/view?usp=sharing" class="download-button" target="_blank">📄 Download PDF Resume</a>
-
 ---
 
-## Education
+## Professional Experience
 
 <div class="cv-section">
 
 <div class="cv-item">
-  <div class="cv-item-title">Bachelor of Computer Science</div>
-  <div class="cv-item-meta">Pune Institute of Computer Technology (P.I.C.T), Pune | 2018 - Present</div>
+  <div class="cv-item-title">Consultant Specialist - Investment Banking</div>
+  <div class="cv-item-meta">HSBC Global Banking | Current</div>
   <div class="cv-item-description">
-    Final year undergraduate student specializing in Computer Science with focus on Deep Learning and Computer Vision. GPA: 3.8/4.0. Active in research projects and academic activities.
+    Building and optimizing solutions for investment banking systems. Contributing to technical strategy and implementation of high-impact initiatives within the Global Banking division.
   </div>
 </div>
 
 <div class="cv-item">
-  <div class="cv-item-title">Diploma in Computer Engineering</div>
-  <div class="cv-item-meta">Government Polytechnic, Pune | 2015 - 2018</div>
+  <div class="cv-item-title">Platform Engineering & DevOps</div>
+  <div class="cv-item-meta">HSBC | Chief Technology Office & Wealth & Private Banking</div>
   <div class="cv-item-description">
-    Completed diploma with distinction. Foundation in core computer science concepts and practical programming skills.
+    Designed and maintained CI/CD pipelines and deployment infrastructure. Improved developer velocity through platform engineering initiatives. Collaborated with cross-functional teams to optimize deployment strategies and infrastructure reliability.
+  </div>
+</div>
+
+<div class="cv-item">
+  <div class="cv-item-title">Data Automation & Systems Engineering</div>
+  <div class="cv-item-meta">HSBC | Various Divisions</div>
+  <div class="cv-item-description">
+    Built automated data solutions and engineering systems. Reduced manual processes and improved operational efficiency through intelligent automation and thoughtful system design.
   </div>
 </div>
 
@@ -150,56 +155,56 @@ redirect_from:
 
 ---
 
-## Key Skills
+## Core Competencies
 
 <div class="cv-skill-grid">
   <div class="cv-skill-category">
-    <h4>Deep Learning</h4>
+    <h4>DevOps & Infrastructure</h4>
     <ul class="cv-skill-list">
-      <li>PyTorch</li>
-      <li>TensorFlow/Keras</li>
-      <li>Neural Networks</li>
-      <li>Model Architecture</li>
+      <li>CI/CD Pipelines</li>
+      <li>Infrastructure as Code</li>
+      <li>Deployment Automation</li>
+      <li>System Reliability</li>
     </ul>
   </div>
 
   <div class="cv-skill-category">
-    <h4>Computer Vision</h4>
+    <h4>Platform Engineering</h4>
     <ul class="cv-skill-list">
-      <li>Object Detection</li>
-      <li>Image Segmentation</li>
-      <li>Image Classification</li>
-      <li>OpenCV</li>
+      <li>Developer Experience</li>
+      <li>Microservices Architecture</li>
+      <li>Scaling Systems</li>
+      <li>Infrastructure Tools</li>
+    </ul>
+  </div>
+
+  <div class="cv-skill-category">
+    <h4>Backend Development</h4>
+    <ul class="cv-skill-list">
+      <li>Java Spring Framework</li>
+      <li>Microservices Design</li>
+      <li>Cloud-Native Architecture</li>
+      <li>API Development</li>
+    </ul>
+  </div>
+
+  <div class="cv-skill-category">
+    <h4>Cloud Technologies</h4>
+    <ul class="cv-skill-list">
+      <li>Cloud Platforms</li>
+      <li>Cloud-Native Design</li>
+      <li>Scalability & Performance</li>
+      <li>Infrastructure Management</li>
     </ul>
   </div>
 
   <div class="cv-skill-category">
     <h4>Programming</h4>
     <ul class="cv-skill-list">
+      <li>Java</li>
       <li>Python</li>
-      <li>C++</li>
-      <li>JavaScript</li>
+      <li>Bash/Shell</li>
       <li>SQL</li>
-    </ul>
-  </div>
-
-  <div class="cv-skill-category">
-    <h4>Data & Tools</h4>
-    <ul class="cv-skill-list">
-      <li>Data Processing</li>
-      <li>Git & GitHub</li>
-      <li>Jupyter Notebooks</li>
-      <li>Cloud Platforms</li>
-    </ul>
-  </div>
-
-  <div class="cv-skill-category">
-    <h4>ML/AI Specialties</h4>
-    <ul class="cv-skill-list">
-      <li>Transformer Models</li>
-      <li>CNN Architectures</li>
-      <li>Model Optimization</li>
-      <li>MLOps Concepts</li>
     </ul>
   </div>
 
@@ -207,48 +212,48 @@ redirect_from:
     <h4>Soft Skills</h4>
     <ul class="cv-skill-list">
       <li>Problem Solving</li>
-      <li>Communication</li>
-      <li>Team Collaboration</li>
-      <li>Research & Analysis</li>
+      <li>Collaboration</li>
+      <li>Technical Communication</li>
+      <li>Continuous Learning</li>
     </ul>
   </div>
 </div>
 
 ---
 
-## Experience & Projects
+## Education & Certifications
 
 <div class="cv-section">
 
 <div class="cv-item">
-  <div class="cv-item-title">🏆 Runners-up Award - NICE Ltd.</div>
-  <div class="cv-item-meta">2024 | Project Development</div>
+  <div class="cv-item-title">Specialization in Deep Learning</div>
+  <div class="cv-item-meta">Online | Completed</div>
   <div class="cv-item-description">
-    Recognized for innovative project development demonstrating technical excellence and creative problem-solving in competitive environment.
+    Comprehensive specialization covering deep learning fundamentals and advanced applications.
   </div>
 </div>
 
 <div class="cv-item">
-  <div class="cv-item-title">Deep Learning Research Projects</div>
-  <div class="cv-item-meta">2023 - Present | Personal Research</div>
+  <div class="cv-item-title">Python Certification (PCAP)</div>
+  <div class="cv-item-meta">Certified | Python Programming Associate</div>
   <div class="cv-item-description">
-    Engaged in multiple research projects exploring applications of deep learning and computer vision in practical scenarios. Implementing state-of-the-art architectures from research papers.
+    Professional certification in Python programming and problem-solving.
   </div>
 </div>
 
 <div class="cv-item">
-  <div class="cv-item-title">Open Source Contributions</div>
-  <div class="cv-item-meta">Ongoing | Community</div>
+  <div class="cv-item-title">Bachelor of Computer Science</div>
+  <div class="cv-item-meta">Pune Institute of Computer Technology (P.I.C.T) | 2018 - 2023</div>
   <div class="cv-item-description">
-    Active contributor to open-source projects. Published code on GitHub demonstrating proficiency in software development, ML implementation, and best practices.
+    Computer Science degree with strong foundation in software engineering, systems design, and practical development practices.
   </div>
 </div>
 
 <div class="cv-item">
-  <div class="cv-item-title">Academic Projects</div>
-  <div class="cv-item-meta">2018 - Present | P.I.C.T</div>
+  <div class="cv-item-title">Diploma in Computer Engineering</div>
+  <div class="cv-item-meta">Government Polytechnic, Pune | 2015 - 2018</div>
   <div class="cv-item-description">
-    Completed multiple academic projects including web applications, data processing systems, and research implementations. Achieved excellent grades in core CS courses.
+    Foundation in core computer science concepts and practical programming skills.
   </div>
 </div>
 
@@ -256,48 +261,15 @@ redirect_from:
 
 ---
 
-## Certifications & Achievements
+## Highlights
 
 <div class="cv-section">
 
-- **Deep Learning Specialization** - Pursuing advanced courses in computer vision and neural networks
-- **GPA: 3.8/4.0** - Strong academic performance at P.I.C.T
-- **Active GitHub Developer** - Multiple projects demonstrating ML and software engineering skills
-- **Research Publications** - Working on publishing research findings in peer-reviewed venues
+- **4+ years** of professional software engineering experience
+- Led projects across **DevOps collaboration, Platform Engineering, and Data Automation**
+- **Participant** in prestigious competitions: Smart India Hackathon (2018, 2020), CDAC AI Hackathon, IIT Madras data science contests
+- Strong track record of **delivering scalable solutions** and improving operational efficiency
 
-</div>
-
----
-
-## Languages & Tools
-
-- **Languages**: Python, C++, JavaScript, SQL
-- **ML Frameworks**: PyTorch, TensorFlow, Keras, scikit-learn
-- **Tools & Platforms**: Git, Jupyter, Google Colab, AWS, VS Code
-- **Platforms**: Linux, Windows, macOS
-
----
-
-## Interests & Goals
-
-My professional interests and long-term goals include:
-
-- Publishing research in top-tier ML/AI conferences
-- Building production-scale ML systems
-- Contributing to open-source ML projects
-- Mentoring junior developers and researchers
-- Solving real-world problems with AI/ML
-- Staying at the forefront of AI/ML advancements
-
----
-
-## Let's Connect
-
-<div style="margin-top: 2em; padding: 1.5em; background: #f0f5ff; border-radius: 6px; text-align: center;">
-  <p style="margin: 0.5em 0;"><strong>📧 Email:</strong> <a href="mailto:aniket.velhankar@gmail.com">aniket.velhankar@gmail.com</a></p>
-  <p style="margin: 0.5em 0;"><strong>🔗 LinkedIn:</strong> <a href="https://www.linkedin.com/in/aniket-velhankar/">linkedin.com/in/aniket-velhankar</a></p>
-  <p style="margin: 0.5em 0;"><strong>💻 GitHub:</strong> <a href="https://github.com/aniketvelhankar">github.com/aniketvelhankar</a></p>
-  <p style="margin: 0.5em 0;"><strong>🐦 Twitter:</strong> <a href="https://twitter.com/imAniketV">@imAniketV</a></p>
 </div>
 
 </div>

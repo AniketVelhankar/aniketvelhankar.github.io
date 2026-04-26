@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Aniket Velhankar"
 title_separator          : "-"
 name                     : &name "Aniket Velhankar"
-description              : &description "Deep Learning & Computer Vision Researcher | Building AI solutions for real-world problems"
+description              : &description "Software Engineer | DevOps | Platform Engineering | Building Scalable Solutions"
 url                      : https://aniketvelhankar.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "aniketvelhankar/aniketvelhankar.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Aniket Velhankar"
   avatar           : "profile.png"
-  bio              : "Deep Learning & Computer Vision Researcher | Building AI Solutions"
+  bio              : "Software Engineer | DevOps | Platform Engineering"
   location         : "Pune, India"
   employer         :
   pubmed           : 
