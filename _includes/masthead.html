@@ -1,15 +1,13 @@
 {% include base_path %}
 
 <header class="site-header">
-  <nav class="site-nav">
+  <nav class="site-nav" aria-label="Main navigation">
     <div class="site-nav__container container">
-      <!-- Logo/Wordmark -->
       <div class="site-nav__brand">
-        <a href="{{ base_path }}/" class="site-nav__title">{{ site.title }}</a>
+        <a href="{{ base_path }}/" class="site-nav__title" aria-label="{{ site.title }}, home">{{ site.title }}</a>
       </div>
 
-      <!-- Main Navigation -->
-      <ul class="site-nav__menu">
+      <ul class="site-nav__menu" id="site-nav-menu">
         {% for link in site.data.navigation.main %}
           {% if link.url contains 'http' %}
             {% assign domain = '' %}
@@ -17,93 +15,45 @@
             {% assign domain = base_path %}
           {% endif %}
           <li class="site-nav__item">
-            <a href="{{ domain }}{{ link.url }}" class="site-nav__link">{{ link.title }}</a>
+            <a href="{{ domain }}{{ link.url }}" class="site-nav__link{% if page.url == link.url %} is-current{% endif %}"{% if page.url == link.url %} aria-current="page"{% endif %}>{{ link.title }}</a>
           </li>
         {% endfor %}
       </ul>
 
-      <!-- Mobile Menu Button -->
-      <button class="site-nav__toggle" aria-label="Toggle navigation menu" id="nav-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
+      <button class="site-nav__toggle" type="button" aria-label="Open navigation menu" aria-controls="site-nav-menu" aria-expanded="false" id="nav-toggle">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
       </button>
     </div>
   </nav>
 </header>
 
-<style>
-  .site-header {
-    position: sticky;
-    top: 0;
-    background-color: white;
-    border-bottom: 1px solid #e0e0e0;
-    z-index: 100;
-  }
+<script>
+  (function() {
+    var toggle = document.getElementById('nav-toggle');
+    var menu = document.getElementById('site-nav-menu');
 
-  .site-nav {
-    padding: 1rem 0;
-  }
+    if (!toggle || !menu) return;
 
-  .site-nav__container {
-    display: flex;
-    justify-content: space-between;
-    {% include base_path %}
+    function setMenuOpen(isOpen) {
+      toggle.setAttribute('aria-expanded', String(isOpen));
+      toggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+      menu.classList.toggle('is-open', isOpen);
+    }
 
-    <header class="site-header">
-      <nav class="site-nav" aria-label="Main navigation">
-        <div class="site-nav__container container">
-          <div class="site-nav__brand">
-            <a href="{{ base_path }}/" class="site-nav__title" aria-label="{{ site.title }}, home">{{ site.title }}</a>
-          </div>
+    toggle.addEventListener('click', function() {
+      setMenuOpen(toggle.getAttribute('aria-expanded') !== 'true');
+    });
 
-          <ul class="site-nav__menu" id="site-nav-menu">
-            {% for link in site.data.navigation.main %}
-              {% if link.url contains 'http' %}
-                {% assign domain = '' %}
-              {% else %}
-                {% assign domain = base_path %}
-              {% endif %}
-              <li class="site-nav__item">
-                <a href="{{ domain }}{{ link.url }}" class="site-nav__link{% if page.url == link.url %} is-current{% endif %}"{% if page.url == link.url %} aria-current="page"{% endif %}>{{ link.title }}</a>
-              </li>
-            {% endfor %}
-          </ul>
+    menu.addEventListener('click', function(event) {
+      if (event.target.closest('a')) setMenuOpen(false);
+    });
 
-          <button class="site-nav__toggle" type="button" aria-label="Open navigation menu" aria-controls="site-nav-menu" aria-expanded="false" id="nav-toggle">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </button>
-        </div>
-      </nav>
-    </header>
-
-    <script>
-      (function() {
-        var toggle = document.getElementById('nav-toggle');
-        var menu = document.getElementById('site-nav-menu');
-
-        if (!toggle || !menu) return;
-
-        function setMenuOpen(isOpen) {
-          toggle.setAttribute('aria-expanded', String(isOpen));
-          toggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
-          menu.classList.toggle('is-open', isOpen);
-        }
-
-        toggle.addEventListener('click', function() {
-          setMenuOpen(toggle.getAttribute('aria-expanded') !== 'true');
-        });
-
-        menu.addEventListener('click', function(event) {
-          if (event.target.closest('a')) setMenuOpen(false);
-        });
-
-        document.addEventListener('keydown', function(event) {
-          if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
-            setMenuOpen(false);
-            toggle.focus();
-          }
-        });
-      })();
-    </script>
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+        setMenuOpen(false);
+        toggle.focus();
+      }
+    });
+  })();
+</script>
