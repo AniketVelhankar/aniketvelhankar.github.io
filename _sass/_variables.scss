@@ -14,7 +14,7 @@ $indent-var                 : 1.3em;
 
 /* system typefaces */
 $serif                      : Georgia, Times, serif;
-$sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+$sans-serif                 : "Inter", -apple-system, ".SFNSText-Regular", "San Francisco", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 $monospace                  : Monaco, Consolas, "Lucida Console", monospace;
 
 /* sans serif typefaces */
@@ -53,18 +53,18 @@ $darker-gray                : mix(#000, $gray, 60%);
 $light-gray                 : mix(#fff, $gray, 50%);
 $lighter-gray               : mix(#fff, $gray, 90%);
 
-$body-color                 : #fff;
-$background-color           : #fff;
-$code-background-color      : #f8f9fa;
+$body-color                 : #fbfaf8;
+$background-color           : #fbfaf8;
+$code-background-color      : #f3f2ef;
 $code-background-color-dark : #2d2d2d;
-$text-color                 : #1a1a1a;
-$border-color               : #e0e0e0;
+$text-color                 : #262622;
+$border-color               : #e8e5df;
 
-$primary-color              : #0066cc;
+$primary-color              : #4c6357;
 $success-color              : #28a745;
 $warning-color              : #ffc107;
 $danger-color               : #dc3545;
-$info-color                 : #0066cc;
+$info-color                 : #4c6357;
 
 /* brands */
 $behance-color              : #1769FF;
