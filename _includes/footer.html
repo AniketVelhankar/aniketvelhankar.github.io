@@ -25,81 +25,11 @@
   </div>
 </footer>
 
-<style>
-  .site-footer {
-    margin-top: 4rem;
-    padding: 2rem 0;
-    border-top: 1px solid #e0e0e0;
-    background-color: #fafafa;
-    font-size: 0.95rem;
+{% include base_path %}
+
+<footer class="site-footer">
+  <div class="container site-footer__container">
+    <p>{{ site.title }} <span aria-hidden="true">&middot;</span> &copy; {{ site.time | date: '%Y' }}</p>
+  </div>
+</footer>
   }
-
-  .footer__content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 2rem;
-  }
-
-  .footer__section {
-    flex: 1;
-    min-width: 200px;
-  }
-
-  .footer__heading {
-    margin: 0 0 1rem;
-    font-size: 0.95rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: #666;
-  }
-
-  .footer__links {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .footer__links a {
-    color: #0066cc;
-    text-decoration: none;
-    transition: color 0.2s;
-  }
-
-  .footer__links a:hover {
-    color: #0052a3;
-    text-decoration: underline;
-  }
-
-  .footer__copyright {
-    margin-top: 2rem;
-    padding-top: 2rem;
-    border-top: 1px solid #e0e0e0;
-    color: #999;
-    font-size: 0.9rem;
-  }
-
-  .footer__copyright p {
-    margin: 0;
-  }
-
-  @media (max-width: 768px) {
-    .site-footer {
-      margin-top: 3rem;
-      padding: 1.5rem 0;
-    }
-
-    .footer__content {
-      flex-direction: column;
-    }
-
-    .footer__copyright {
-      margin-top: 1.5rem;
-    }
-  }
-</style>

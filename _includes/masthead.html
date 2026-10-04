@@ -48,98 +48,62 @@
   .site-nav__container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-  }
+    {% include base_path %}
 
-  .site-nav__brand a {
-    color: #000;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.1rem;
-    transition: color 0.2s;
-  }
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Main navigation">
+        <div class="site-nav__container container">
+          <div class="site-nav__brand">
+            <a href="{{ base_path }}/" class="site-nav__title" aria-label="{{ site.title }}, home">{{ site.title }}</a>
+          </div>
 
-  .site-nav__brand a:hover {
-    color: #0066cc;
-  }
+          <ul class="site-nav__menu" id="site-nav-menu">
+            {% for link in site.data.navigation.main %}
+              {% if link.url contains 'http' %}
+                {% assign domain = '' %}
+              {% else %}
+                {% assign domain = base_path %}
+              {% endif %}
+              <li class="site-nav__item">
+                <a href="{{ domain }}{{ link.url }}" class="site-nav__link{% if page.url == link.url %} is-current{% endif %}"{% if page.url == link.url %} aria-current="page"{% endif %}>{{ link.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
 
-  .site-nav__menu {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-    margin: 0;
-    padding: 0;
-  }
+          <button class="site-nav__toggle" type="button" aria-label="Open navigation menu" aria-controls="site-nav-menu" aria-expanded="false" id="nav-toggle">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
 
-  .site-nav__link {
-    color: #000;
-    text-decoration: none;
-    font-size: 0.95rem;
-    transition: color 0.2s;
-  }
+    <script>
+      (function() {
+        var toggle = document.getElementById('nav-toggle');
+        var menu = document.getElementById('site-nav-menu');
 
-  .site-nav__link:hover {
-    color: #0066cc;
-  }
+        if (!toggle || !menu) return;
 
-  .site-nav__toggle {
-    display: none;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 5px;
-  }
+        function setMenuOpen(isOpen) {
+          toggle.setAttribute('aria-expanded', String(isOpen));
+          toggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+          menu.classList.toggle('is-open', isOpen);
+        }
 
-  .site-nav__toggle span {
-    display: block;
-    width: 25px;
-    height: 2px;
-    background: #000;
-    margin: 5px 0;
-    transition: 0.3s;
-  }
+        toggle.addEventListener('click', function() {
+          setMenuOpen(toggle.getAttribute('aria-expanded') !== 'true');
+        });
 
-  @media (max-width: 768px) {
-    .site-nav__toggle {
-      display: block;
-    }
+        menu.addEventListener('click', function(event) {
+          if (event.target.closest('a')) setMenuOpen(false);
+        });
 
-    .site-nav__menu {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      right: 0;
-      flex-direction: column;
-      background: white;
-      gap: 0;
-      border-bottom: 1px solid #e0e0e0;
-    }
-
-    .site-nav__menu.active {
-      display: flex;
-    }
-
-    .site-nav__item {
-      border-bottom: 1px solid #e0e0e0;
-    }
-
-    .site-nav__link {
-      display: block;
-      padding: 1rem 1.5rem;
-    }
-  }
-</style>
-
-<script>
-  document.getElementById('nav-toggle').addEventListener('click', function() {
-    document.querySelector('.site-nav__menu').classList.toggle('active');
-  });
-
-  // Close menu when link is clicked
-  document.querySelectorAll('.site-nav__link').forEach(link => {
-    link.addEventListener('click', function() {
-      document.querySelector('.site-nav__menu').classList.remove('active');
-    });
-  });
-</script>
+        document.addEventListener('keydown', function(event) {
+          if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+            setMenuOpen(false);
+            toggle.focus();
+          }
+        });
+      })();
+    </script>

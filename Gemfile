@@ -25,3 +25,7 @@ group :jekyll_plugins do
   gem 'jekyll-sitemap'
   gem 'hawkins'
 end
+
+gem "csv", "~> 3.3"
+
+gem "bigdecimal", "~> 4.1"
